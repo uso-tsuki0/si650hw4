@@ -1,0 +1,1 @@
+{"statistics":{"vocab":{"apple":2,"banana":1,"cherry":1},"number_of_documents":1,"total_token_count":4},"vocabulary":["apple","banana","cherry"],"document_metadata":{"1":{"unique_tokens":3,"length":4,"unique_token_list":["apple","banana","cherry"]}},"index":{"apple":{"1":2},"banana":{"1":1},"cherry":{"1":1}}}
