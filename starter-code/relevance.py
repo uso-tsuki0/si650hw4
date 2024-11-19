@@ -80,7 +80,7 @@ def ndcg_score(search_result_relevances: list[float],
 
 
 
-def run_relevance_tests(relevance_data_filename: str, ranker) -> dict[str, float]:
+def run_relevance_tests(relevance_data_filename: str, ranker, ranker_args={}) -> dict[str, float]:
     # TODO: Implement running relevance test for the search system for multiple queries.
     """
     Measures the performance of the IR system using metrics, such as MAP and NDCG.
@@ -107,7 +107,7 @@ def run_relevance_tests(relevance_data_filename: str, ranker) -> dict[str, float
     # TODO: Run each of the dataset's queries through your ranking function
     result_map = {}
     for query in score_map.keys():
-        ranked = ranker.query(query)
+        ranked = ranker.query(query, **ranker_args)
         docids = []
         map_rev = []
         ndcg_rev = []
